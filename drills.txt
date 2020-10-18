@@ -200,6 +200,28 @@
                 solve_tower_of_hanoi(disk - 1, staging, destination, start);
               }
             }
+            
+            
+// main goal: move disk (n) from source to destination and place all other (n1) disks on top of it, never placing disk on top of one that is smaller
+// utlize third peg as buffer
+
+// move n-1 disks from source to aux
+// move nth disk from source to destination
+// move n-1 disks from aux to destination
+
+// disk = n
+// stacks = source, aux, dest
+
+// hanoi (disk, source, dest, aux)
+    // base case //
+// IF disk == 1, move from source to dest
+
+// ELSE
+// hanoi(n-1, source, aux, dest)
+// move disk from source to dest
+// hanoi(n-1, aux, dest, source)
+
+ 
 
 
 12. Iterative
